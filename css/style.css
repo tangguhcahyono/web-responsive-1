@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.navbar-container {
+  width: 100%;
+  display: flex;
+  padding: 1rem 6rem;
+  z-index: 99999;
+  background-color: #3b1e54;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0px 2px 2px;
+}
+.nav-menu ul {
+  display: flex;
+  gap: 0rem 1rem;
+}
+.nav-menu li {
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #eeeeee;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+.nav-menu li:hover a {
+  color: #3b1e54;
+  background-color: #d4bee4;
+  padding: 1rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #eeeeee;
+}
+.logo p {
+  font-family: "Playwrite GB S", cursive;
+  font-weight: 700;
+}
+.jumbotron {
+  padding-top: 1rem;
+  height: 100vh;
+  background-color: #d4bee4;
+  background-image: url("../img/jumbotronimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+.jumbotron h1 {
+  margin-top: 5rem;
+  margin-right: 1rem;
+  font-weight: 400;
+  font-size: 4rem;
+  margin-left: 6rem;
+}
+.jumbotron a {
+  text-decoration: none;
+}
+.jumbotron p {
+  margin-top: 4rem;
+  margin-left: 6rem;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #3b1e54;
+  width: 400px;
+  color: #eeeeee;
+  border: solid transparent 5px;
+  box-shadow: 4px 4px 10px black;
+  padding: 1rem 1rem;
+  transition: color 0.3s ease, background-color 1s ease, border-color 1s ease;
+}
+main .jumbotron p:hover {
+  cursor: pointer;
+  color: #3b1e54;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  border-color: #3b1e54;
+  transition: color 0.2s ease, background-color 1s ease, border-color 1s ease;
+}
+main {
+  width: 100%;
+  display: flex;
+}
+main .content {
+  width: 75%;
+}
+
+article.about {
+  padding: 4rem 4rem;
+  height: 100vh;
+  background-color: #d5cece;
+  background-image: url("../img/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+article h2 {
+  font-size: 3rem;
+}
+.description {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  text-indent: 6rem;
+  font-weight: 300;
+  text-align: justify;
+}
+.why {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.reason {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  font-size: 1.3rem;
+  gap: 2rem;
+}
+.reasonDetail {
+  padding: 2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 10px;
+  flex-basis: 40%;
+  align-items: center;
+  transition: color 0.2s ease, background-color 1s ease, border-color 1s ease;
+}
+.reasonDetail:hover {
+  background-color: #d4bee4;
+  transition: color 0.2s ease, background-color 1s ease, border-color 1s ease;
+  box-shadow: 4px 4px 10px #3b1e54;
+}
+.reasonDetail h3 {
+  text-align: center;
+}
+.reasonDetail p {
+  text-align: center;
+}
+.reasonLogo {
+  margin-top: 2rem;
+  font-size: 4rem;
+}
+article.services {
+  padding: 4rem 4rem;
+  height: 120vh;
+  background-color: #eeeeee;
+}
+.services .list-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+.services p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.servicesOffered {
+  flex-basis: 30%;
+  background-color: white;
+  padding-bottom: 1.5rem;
+}
+.servicesOffered h3 {
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #3b1e54;
+  color: #eeeeee;
+}
+.servicesOffered p {
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #3b1e54;
+  color: #eeeeee;
+  border-radius: 1rem;
+  transition: color 0.2s ease, background-color 1s ease, border-color 1s ease;
+}
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #3b1e54;
+  box-shadow: 0px 2px 10px #3b1e54;
+  transition: color 0.2s ease, background-color 1s ease, border-color 1s ease;
+}
+aside {
+  padding: 1rem 0;
+  height: 100vh;
+  position: fixed;
+  inset-block-start: 2;
+  inset-inline-end: 0;
+  width: 25%;
+  background-color: #d4bee4;
+  box-shadow: -1px 0px 10px;
+}
+aside h2 {
+  margin-top: 2.5rem;
+  color: #3b1e54;
+  font-size: 2rem;
+  text-align: center;
+}
+.porto {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-flow: column;
+  width: auto;
+  justify-content: center;
+}
+.porto-detail {
+  width: 250px;
+  padding: 1rem 1rem;
+  margin: auto;
+}
+.porto p {
+  font-size: 1.2rem;
+}
+.porto img {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  border: solid 5px white;
+  box-shadow: 2px 2px 10px;
+}
+footer {
+  background-color: #3b1e54;
+  color: #eeeeee;
+  padding: 1rem 1rem;
+}
+footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+  .jumbotron {
+    height: 80vh;
+  }
+  .jumbotron h1 {
+    margin-top: 6rem;
+    font-size: 2rem; /* Menyesuaikan ukuran font */
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .jumbotron p {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    width: 200px;
+    box-shadow: 4px 4px 10px black;
+    padding: 1rem 1rem;
+  }
+  article.about,
+  article.services {
+    padding-top: 1rem;
+    padding: 1rem 1rem;
+    height: auto;
+  }
+  article h2 {
+    margin-top: 6rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .about .description {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .content {
+    width: 100%;
+    height: auto;
+  }
+  .reason {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .servicesOffered {
+    flex-basis: 100%; /* Menyesuaikan lebar */
+    padding: 1rem; /* Menyesuaikan padding */
+  }
+  aside h2 {
+    margin-top: 1rem;
+  }
+  aside {
+    position: static; /* Mengubah posisi menjadi static */
+    width: 100%; /* Menyesuaikan lebar */
+    height: auto;
+  }
+  .porto {
+    padding: 0;
+  }
+  .porto-detail {
+    margin: auto;
+  }
+  .porto img {
+    width: 100%; /* Menyesuaikan gambar agar responsif */
+    height: auto; /* Mempertahankan rasio aspek */
+  }
+}
